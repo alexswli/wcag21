@@ -8,18 +8,15 @@
 		<h1>Understanding Timeouts</h1>
 		<section id="intent">
 			<h2>Intent</h2>
-			<p>The use of timed events can present significant barriers for users with cognitive disabilities, as these users may require more time to read content or to perform functions, such as completing an online form.</p>
-			<p>During the completion of an online process for reserving a hotel room and purchasing a plane ticket, a user with a cognitive impairment may become overwhelmed with the amount of instruction and data input required to complete the process. The user may not be able to complete the process in one sitting, and may need to take a break. Ideally, users should be able to leave a process without losing their current place within the process, and without losing data that have already been entered. If users cannot take a break and check their work, many will often be unable to complete a task correctly.</p>
-			<p>For situations where the absence of a timed event would significantly change the intended functionality of an application (e.g., an auction or another real-time event), it is important to ensure that users with disabilities are properly notified. Notifications should include information about timed events, and an indication of the duration of the time given. As well, they should include mechanisms clearly labeled to adjust, extend, or stop the duration of an event, to allow users to fully engage and interact with Web content and functionality. For example, if an e-commerce Web site's checkout process provides secure credit card transactions, the user is notified of the timeout, and is given time to extend it.</p>
-			<p>When there is a chance to extend a time limit, it should be noted that many users, within 20 seconds, cannot read instructions to extend a time limit.  Using simple text can reduce the time it takes to read these instructions.</p>
-			<p>This success criterion only applies to timeouts that are within the content providers knowledge or control. For example, if the user closes a web browser or device, and looses content in an open page that has not yet been submitted, the success criteria has not been violated.</p>
+			<p>The use of timed events can present significant barriers for users with certain cognitive disabilities, as these users may require more time to read content or to perform functions, such as completing an online form.</p>
+			<p>Users with certain cognitive impairment may become overwhelmed with the amount of instruction and data input required to complete an online process. The user may not be able to complete the process in one sitting and may need to take breaks. Ideally, users should be able to leave a process without losing data that have already been entered. Many users will often be unable to complete a task correctly if they cannot take a break and check their work.</p>
+			<p>For situations where timing (e.g., an auction and airline reservation) or protection of data (e.g., online banking) is essential, it is important to warn users about the time limitation. Notifications should include information about the length of time restriction. For example, the user should be notified of the time limit upon logging in that the banking site will automatically log out the user and delete unsubmitted data after a specific length of inactivity. In case of real-time events with uncertain expiration time, such as purchasing of concert tickets, the site can provide an estimated time.</p>
+			<p>Another way to meet this success criterion is to preserve data entered by the user for 20 hours or longer. This predicates on user authentication and consent of data preservation prior to data entry and requires user to re-authenticate after the timeout. Where applicable, this approach can potentially offer additional data protection while enabling users with certain cognitive disabilities to continue without data lose.</p>
+			<p>This success criterion only applies to timeouts that are within the content providers knowledge or control. For example, it is not a violation of the success criterion to loses unsubmitted content when the internet connection disconnects, the user closes the web browser, or device powers off.</p>
 		</section>
 		<section id="benefits">
 			<h2>Benefits</h2>
-			<p>This Success Criterion helps users who need additional time performing tasks or reading content. </p>
-			<p>A user can take a break and check their work without needing to start again. This enables many users to complete tasks online that they otherwise could not do. </p>
-			<p>If a situation exists where a timeout is necessary, the user is warned at the start of the task about the length of inactivity that would generate a timeout. The user  can then decide if they can manage this task or not in the given time. This will  reduce the frustration of working hard at a task just to have all their work deleted due to a timeout.</p>
-
+			<p>This Success Criterion helps users who need additional time performing tasks or reading content. Users can take breaks and check their work. This enables them to complete tasks online that they otherwise could not do.</p>
 			<p>This Success Criterion helps people with many different cognitive disabilities, including people with:</p>
 			<ul>
 				<li> language-related disabilities; </li>
@@ -48,9 +45,9 @@
 				<h3>Sufficient</h3>
 				<p class="instructions">Techniques that are sufficient to meet the Guideline or Success Criterion.</p>
 				<ul>
-					<li> Do not expire a session timeout unless there has been a 24 hours of inactivity. </li>
-					<li> If a situation exists where a timeout is appropriate, use a mechanism to prevent data loss,  and the ability to return to the original point. </li>
-					<li> If a situation exists where a timeout is appropriate, the user is warned at the start of the task about the length of inactivity that would generate a timeout </li>
+					<li> Set session timeout to take place after 20 hours or more of inactivity </li>
+					<li> Provide autosave </li>
+					<li> Provide a warning about the estimated or exact length of inactivity that would generate a timeout without data preservation</li>
 				</ul>
 			</section>
 		</section>
